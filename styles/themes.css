@@ -1,28 +1,32 @@
 :root {
-  /* --lighttext: #0080FF;
-  --darktext: #0040C0; */
   --lighttext: #FFEFD5;
   --darktext: #FF8C00;
+  --lightbackground: whitesmoke;
+  --darkbackground: black;
   --bright: brightness(120%);
   --dim: brightness(80%);
 }
 
 body {
-  background-color: black;
+  background-color:var(--darkbackground);
   color: var(--lighttext);
 }
 
 body.light {
+  background-color: var(--lightbackground);
   color: var(--darktext);
-  background-color: whitesmoke;
+}
+
+.highlight, .hover-highlight:hover {
+  filter: var(--bright);
+}
+
+.light .highlight .light .hover-highlight:hover {
+  filter: var(--dim);
 }
 
 .header .big{
-  border-bottom: 1px solid var(--lighttext);
-}
-
-.light .header .big {
-  border-color: var(--darktext);
+  border-bottom: 1px solid currentColor;
 }
 
 .signature {
@@ -44,30 +48,18 @@ body.light {
   background: url(../images/mugua-dark.png) no-repeat center center;
 }
 
-.menu .option::hover {
-  filter: var(--bright);
-}
-
-.light .menu .option:hover {
-  filter: var(--dim);
-}
-
-.section .close {
+.section .back {
   background: url(../images/menu-light.png) no-repeat center center;
   background-size: cover;
 }
 
-.light .section .close {
+.light .section .back {
   background: url(../images/menu-dark.png) no-repeat center center;
   background-size: cover;
 }
 
 .section a {
-  color: var(--lighttext);
-}
-
-.light .section a {
-  color: var(--darktext);
+  color: currentColor;
 }
 
 .section a::after {
@@ -88,77 +80,55 @@ body.light {
 }
 
 #what .content .outer {
-  border: 1px solid var(--lighttext);
-}
-
-.light #what .content .outer {
-  border: 1px solid var(--darktext);
+  border: 1px solid currentColor;
 }
 
 #what .content .outer .sector {
-  background-color: var(--lighttext);
-  border: 1px solid black;
-}
-
-.light #what .content .outer .sector {
-  background-color: var(--darktext);
-  border: 1px solid whitesmoke;
-}
-
-#what .content .outer .sector:hover {
-  filter: var(--bright);
-}
-
-.light #what .content .outer .sector:hover {
-  filter: var(--dim);
+  border: 1px solid transparent;
 }
 
 #what .content .outer .sector.top-left {
-  background: var(--lighttext) url('../images/site-black.png') no-repeat bottom 10vmin right 10vmin;
+  background: currentColor url('../images/site-black.png') no-repeat bottom 10vmin right 10vmin;
   background-size: 15%;
 }
 
 .light #what .content .outer .sector.top-left {
-  background: var(--darktext) url('../images/site-white.png') no-repeat bottom 10vmin right 10vmin;
-  background-size: 15%;
+  background-image: url(../images/site-white.png);
 }
 
 #what .content .outer .sector.top-right {
-  background: var(--lighttext) url('../images/blog-black.png') no-repeat bottom 10vmin right 10vmin;
+  background: currentColor url('../images/blog-black.png') no-repeat bottom 10vmin right 10vmin;
   background-size: 15%;
 }
 
 .light #what .content .outer .sector.top-right {
-  background: var(--darktext) url('../images/blog-white.png') no-repeat bottom 10vmin right 10vmin;
-  background-size: 15%;
+  background-image: url('../images/blog-white.png');
 }
 
 #what .content .outer .sector.bottom-left {
-  background: var(--lighttext) url('../images/app-black.png') no-repeat bottom 10vmin right 10vmin;
+  background: currentColor url('../images/app-black.png') no-repeat bottom 10vmin right 10vmin;
   background-size: 15%;
 }
 
 .light #what .content .outer .sector.bottom-left {
-  background: var(--darktext) url('../images/app-white.png') no-repeat bottom 10vmin right 10vmin;
-  background-size: 15%;
+  background-image: url('../images/app-white.png');
 }
 
 #what .content .outer .sector.bottom-right {
-  background: var(--lighttext) url('../images/learn-black.png') no-repeat bottom 10vmin right 10vmin;
+  background: currentColor url('../images/learn-black.png') no-repeat bottom 10vmin right 10vmin;
   background-size: 15%;
 }
 
 .light #what .content .outer .sector.bottom-right {
-  background: var(--darktext) url('../images/learn-white.png') no-repeat bottom 10vmin right 10vmin;
-  background-size: 15%;
+  background-image: url('../images/learn-white.png');
 }
 
 #what .content .inner {
-  border: 1px solid black;
-  background-color: black;
+  border: 1px solid var(--darkbackground);
+  background-color: var(--darkbackground);
 }
 
 .light #what .content .inner {
-  border: 1px solid whitesmoke;
-  background-color: whitesmoke;
+  border: 1px solid var(--lightbackground);
+  background-color: var(--lightbackground);
 }

@@ -2,6 +2,7 @@
 @import url(styles/themes.css);
 @import url(styles/fonts.css);
 @import url(styles/utils.css);
+@import url(styles/modal.css);
 @import url(styles/what.css);
 
 * {
@@ -130,7 +131,7 @@ body {
   margin-bottom: 0.8em;
 }
 
-.section .close {
+.section .back {
   grid-area: x;
   place-self: center;
   height: 1.8em;
@@ -143,6 +144,6 @@ body {
   z-index: -1;
 }
 
-.section .close:hover {
+.section .back:hover {
   cursor: pointer;
 }
