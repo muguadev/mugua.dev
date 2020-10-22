@@ -1,0 +1,41 @@
+:root {
+  --lighttext: #0080FF;
+  --darktext: #0040C0;
+}
+
+body {
+  background-color: black;
+  color: var(--lighttext);
+}
+
+body.light {
+  color: var(--darktext);
+  background-color: whitesmoke;
+}
+
+.header .big{
+  border-bottom: 1px solid var(--lighttext);
+}
+
+.light .header .big {
+  border-color: var(--darktext);
+}
+
+.signature {
+  background: url(../images/mugua-light.png) no-repeat center left;
+  background-size: 10%;
+}
+
+.light .signature{
+  background: url(../images/mugua-dark.png) no-repeat center left;
+  background-size: 10%;
+}
+
+.biglogo {
+  background: url(../images/mugua-light.png) no-repeat center center;
+  background-size: 0%;
+}
+
+.light .biglogo {
+  background: url(../images/mugua-dark.png) no-repeat center center;
+}

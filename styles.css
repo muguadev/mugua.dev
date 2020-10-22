@@ -1,0 +1,99 @@
+@import url(styles/layout.css);
+@import url(styles/themes.css);
+@import url(styles/fonts.css);
+@import url(styles/utils.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 98%;
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.switch {
+  cursor: pointer;
+  height: 90%;
+  width: 90%;
+  background: url(images/sun.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.light .switch {
+  background: url(images/moon.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.font {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.signature {
+  font-size: 0.8em;
+  padding-left: 1.8em;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes biglogo {
+     0% { background-size: 0%; }
+    50% { background-size: 50%;}
+   100% { background-size: 100%; }
+}
+
+.header {
+  height: 100%;
+  width: auto;
+}
+
+.header .big {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.biglogo {
+  height: 60vmin;
+  width: 60vmin;
+  animation: biglogo 1.5s linear 0.5s 1 normal forwards;
+}
+
+@keyframes menu {
+    0%  { opacity: 0; }
+   50%  { opacity: 0.5; }
+  100%  { opacity: 1; }
+}
+
+.menu {
+  height: 60vmin;
+  font-size: 2.5em;
+  opacity: 0;
+  animation: menu 0.5s linear 2.5s 1 normal forwards;
+}
+
+.option:hover{
+  font-weight: bold;
+  filter: brightness(120%);
+  cursor: pointer;
+}
+
+.light .option:hover {
+  filter: brightness(80%);
+}

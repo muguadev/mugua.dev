@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
+@font-face {
+  font-family: "opendyslexic";
+  src: url(../fonts/OpenDyslexic-Regular.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "opendyslexic";
+  src: url(../fonts/OpenDyslexic-Bold.otf);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "opendyslexic";
+  src: url(../fonts/OpenDyslexic-Italic.otf);
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "opendyslexic";
+  src: url(../fonts/OpenDyslexic-BoldItalic.otf);
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.dyslexic {
+  font-family: "opendyslexic";
+  line-height: 350%;
+}
+
+.font {
+  font-family: "opendyslexic";
+}
+
+.dyslexic .font{
+  font-family: "Comfortaa";
+   bottom: 0.6em;
+}

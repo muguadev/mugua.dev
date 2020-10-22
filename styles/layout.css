@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  grid-template-rows: 10% 86% 4%;
+  grid-template-columns: 2% 2% 25% 55% 12%;
+  column-gap: 1%;
+  grid-template-areas:
+    "header header header header header"
+    "logo logo logo working working"
+    "theme font footer footer signature";
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+}
+
+.switch {
+  grid-area: theme;
+  place-self: center;
+}
+
+.font {
+  grid-area: font;
+  place-self: center;
+}
+
+.signature {
+  grid-area: signature;
+  place-self: center left;
+  display: flex;
+  align-items: center;
+}
+
+.biglogo {
+  grid-area: logo;
+  place-self: center left;
+}
+
+.menu {
+  grid-area: working;
+  place-self: center left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
