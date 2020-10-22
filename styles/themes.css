@@ -1,6 +1,8 @@
 :root {
   --lighttext: #0080FF;
   --darktext: #0040C0;
+  --bright: brightness(120%);
+  --dim: brightness(80%);
 }
 
 body {
@@ -40,6 +42,14 @@ body.light {
   background: url(../images/mugua-dark.png) no-repeat center center;
 }
 
+.menu .option::hover {
+  filter: var(--bright);
+}
+
+.light .menu .option:hover {
+  filter: var(--dim);
+}
+
 .section .close {
   background: url(../images/close-light.png) no-repeat center center;
   background-size: cover;
@@ -68,5 +78,85 @@ body.light {
 }
 
 .section p b {
-  filter: brightness(120%);
+  filter: var(--bright);
+}
+
+.light .section p b {
+  filter: var(--dim);
+}
+
+#what .content .outer {
+  border: 1px solid var(--lighttext);
+}
+
+.light #what .content .outer {
+  border: 1px solid var(--darktext);
+}
+
+#what .content .outer .sector {
+  background-color: var(--lighttext);
+  border: 1px solid black;
+}
+
+.light #what .content .outer .sector {
+  background-color: var(--darktext);
+  border: 1px solid whitesmoke;
+}
+
+#what .content .outer .sector:hover {
+  filter: var(--bright);
+}
+
+.light #what .content .outer .sector:hover {
+  filter: var(--dim);
+}
+
+#what .content .outer .sector.top-left {
+  background: var(--lighttext) url('../images/site-black.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+.light #what .content .outer .sector.top-left {
+  background: var(--darktext) url('../images/site-white.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+#what .content .outer .sector.top-right {
+  background: var(--lighttext) url('../images/blog-black.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+.light #what .content .outer .sector.top-right {
+  background: var(--darktext) url('../images/blog-white.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+#what .content .outer .sector.bottom-left {
+  background: var(--lighttext) url('../images/app-black.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+.light #what .content .outer .sector.bottom-left {
+  background: var(--darktext) url('../images/app-white.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+#what .content .outer .sector.bottom-right {
+  background: var(--lighttext) url('../images/learn-black.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+.light #what .content .outer .sector.bottom-right {
+  background: var(--darktext) url('../images/learn-white.png') no-repeat bottom 10vmin right 10vmin;
+  background-size: 15%;
+}
+
+#what .content .inner {
+  border: 1px solid black;
+  background-color: black;
+}
+
+.light #what .content .inner {
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
 }
