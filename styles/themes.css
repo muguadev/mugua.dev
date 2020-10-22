@@ -49,3 +49,24 @@ body.light {
   background: url(../images/close-dark.png) no-repeat center center;
   background-size: cover;
 }
+
+.section a {
+  color: var(--lighttext);
+}
+
+.light .section a {
+  color: var(--darktext);
+}
+
+.section a::after {
+  margin-left: 0.2em;
+  content: url(../images/link-light.png);
+}
+
+.light .section a::after{
+  content: url(../images/link-dark.png);
+}
+
+.section p b {
+  filter: brightness(120%);
+}
