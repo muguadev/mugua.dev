@@ -1,6 +1,8 @@
 :root {
-  --lighttext: #0080FF;
-  --darktext: #0040C0;
+  /* --lighttext: #0080FF;
+  --darktext: #0040C0; */
+  --lighttext: #FFEFD5;
+  --darktext: #FF8C00;
   --bright: brightness(120%);
   --dim: brightness(80%);
 }
@@ -51,12 +53,12 @@ body.light {
 }
 
 .section .close {
-  background: url(../images/close-light.png) no-repeat center center;
+  background: url(../images/menu-light.png) no-repeat center center;
   background-size: cover;
 }
 
 .light .section .close {
-  background: url(../images/close-dark.png) no-repeat center center;
+  background: url(../images/menu-dark.png) no-repeat center center;
   background-size: cover;
 }
 
