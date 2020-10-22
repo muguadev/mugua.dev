@@ -44,3 +44,14 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+.section {
+  grid-area: working;
+  place-self: center left;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 95% 5%;
+  grid-template-areas:
+    "title x"
+    "content content";
+}

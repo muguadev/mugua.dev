@@ -39,3 +39,13 @@ body.light {
 .light .biglogo {
   background: url(../images/mugua-dark.png) no-repeat center center;
 }
+
+.section .close {
+  background: url(../images/close-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+.light .section .close {
+  background: url(../images/close-dark.png) no-repeat center center;
+  background-size: cover;
+}
