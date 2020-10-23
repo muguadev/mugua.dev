@@ -48,3 +48,8 @@
   left: 20vmin;
   z-index: 10;
 }
+
+.sector:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

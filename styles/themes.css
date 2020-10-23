@@ -154,3 +154,43 @@ body.light {
   background: url(../images/close-dark.png) no-repeat center center;
   background-size: cover;
 }
+
+.modal .modal-logo.site {
+  background: url(../images/site-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+.light .modal .modal-logo.site {
+  background: url(../images/site-dark.png) no-repeat center center;
+  background-size: cover;
+}
+
+.modal .modal-logo.blog {
+  background: url(../images/blog-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+.light .modal .modal-logo.blog {
+  background: url(../images/blog-dark.png) no-repeat center center;
+  background-size: cover;
+}
+
+.modal .modal-logo.app {
+  background: url(../images/app-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+.light .modal .modal-logo.app {
+  background: url(../images/app-dark.png) no-repeat center center;
+  background-size: cover;
+}
+
+.modal .modal-logo.learn {
+  background: url(../images/learn-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+.light .modal .modal-logo.learn {
+  background: url(../images/learn-dark.png) no-repeat center center;
+  background-size: cover;
+}

@@ -66,3 +66,8 @@ body {
     "logo logo logo working working"
     "theme font footer footer signature";
 }
+
+.modal .modal-logo {
+  grid-area: logo;
+  place-self: start end;
+}

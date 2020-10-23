@@ -16,12 +16,19 @@
   pointer-events: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 1.2em;
 }
 
 .modal:target {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal .modal-logo {
+  height: 50vmin;
+  width: 50vmin;
+  margin-top: 2em;
 }
 
 .modal .modal-content {
