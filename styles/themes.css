@@ -62,12 +62,12 @@ body.light {
   color: currentColor;
 }
 
-.section a:not(.close)::after {
+.section a[target="_blank"]::after {
   margin-left: 0.2em;
   content: url(../images/link-light.png);
 }
 
-.light .section a:not(.close)::after{
+.light .section a[target="_blank"]::after{
   content: url(../images/link-dark.png);
 }
 
