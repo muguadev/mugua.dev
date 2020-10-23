@@ -194,3 +194,17 @@ body.light {
   background: url(../images/learn-dark.png) no-repeat center center;
   background-size: cover;
 }
+
+.frames-container .frame:not(.arrow-right) {
+  background-color: var(--lightbackground) !important;
+  color: var(--darkbackground);
+}
+
+.light .frames-container .frame:not(.arrow-right) {
+  background-color: var(--darkbackground) !important;
+  color: var(--lightbackground);
+}
+
+.light .frames-container .frame.arrow-right {
+  filter: var(--dim);
+}
