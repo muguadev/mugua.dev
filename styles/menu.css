@@ -1,0 +1,7 @@
+.option[data-option]:hover span {
+  display: none;
+}
+
+.option[data-option]:hover::before {
+  content: attr(data-longtext);
+}
