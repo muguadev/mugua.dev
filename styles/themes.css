@@ -21,7 +21,7 @@ body.light {
   filter: var(--bright);
 }
 
-.light .highlight .light .hover-highlight:hover {
+.light .highlight, .light .hover-highlight:hover {
   filter: var(--dim);
 }
 
@@ -62,20 +62,20 @@ body.light {
   color: currentColor;
 }
 
-.section a::after {
+.section a:not(.close)::after {
   margin-left: 0.2em;
   content: url(../images/link-light.png);
 }
 
-.light .section a::after{
+.light .section a:not(.close)::after{
   content: url(../images/link-dark.png);
 }
 
-.section p b {
+.section b {
   filter: var(--bright);
 }
 
-.light .section p b {
+.light .section b {
   filter: var(--dim);
 }
 
@@ -131,4 +131,26 @@ body.light {
 .light #what .content .inner {
   border: 1px solid var(--lightbackground);
   background-color: var(--lightbackground);
+}
+
+.modal {
+  background-color: var(--darkmodalbackground);
+}
+
+.light .modal {
+  background-color: var(--lightmodalbackground);
+}
+
+.modal .modal-title {
+  border-bottom: 1px dotted currentColor;
+}
+
+.modal .close {
+  background: url(../images/close-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+.light .modal .close {
+  background: url(../images/close-dark.png) no-repeat center center;
+  background-size: cover;
 }

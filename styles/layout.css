@@ -55,3 +55,14 @@ body {
     "title x"
     "content content";
 }
+
+.modal {
+  display: grid;
+  grid-template-rows: 10% 86% 4%;
+  grid-template-columns: 2% 2% 25% 55% 12%;
+  column-gap: 1%;
+  grid-template-areas:
+    "header header header header header"
+    "logo logo logo working working"
+    "theme font footer footer signature";
+}
