@@ -11,6 +11,7 @@ function attachHoverTexts() {
 
   for (e of document.querySelectorAll("#site .frame.explained")) {
     e.addEventListener('mouseenter', (ev) => {
+      ev.target.classList.remove("cta");
       document.querySelector(`.explanation.${ev.target.getAttribute("data-text")}`).classList.remove("hidden");
     });
     e.addEventListener('mouseleave', (ev) => {

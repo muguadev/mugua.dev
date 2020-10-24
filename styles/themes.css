@@ -200,6 +200,37 @@ body.light {
   color: var(--darkbackground);
 }
 
+.light .frames-container .frame:not(.arrow-right) {
+  background-color: var(--darkbackground) !important;
+  color: var(--lightbackground);
+}
+
+@keyframes light-explain-cta {
+   0% { border: none; box-shadow: none; }
+  47% { border: var(--lighttext); box-shadow: 0 0 3em var(--lighttext); }
+  49% { border: none; box-shadow: none; }
+  55% { border: var(--lighttext); box-shadow: 0 0 3em var(--lighttext); }
+  57% { border: none; box-shadow: none; }
+ 100% { border: none; box-shadow: none; }
+}
+
+@keyframes dark-explain-cta {
+  0% { border: none; box-shadow: none; }
+ 47% { border: var(--darktext); box-shadow: 0 0 3em var(--darktext); }
+ 49% { border: none; box-shadow: none; }
+ 55% { border: var(--darktext); box-shadow: 0 0 3em var(--darktext); }
+ 57% { border: none; box-shadow: none; }
+100% { border: none; box-shadow: none; }
+}
+
+.frames-container .frame.explained.cta{
+  animation: light-explain-cta 2s linear 10s infinite normal;
+}
+
+.light .frames-container .frame.explained.cta{
+  animation: dark-explain-cta 2s linear 10s infinite normal;
+}
+
 .frames-container .frame.explained:hover {
   cursor: url(../images/more-black.png), auto;
   border-color: var(--lighttext);
@@ -210,11 +241,6 @@ body.light {
   cursor: url(../images/more-white.png), auto;
   border-color: var(--darktext);
   box-shadow: 0 0 3em var(--darktext);
-}
-
-.light .frames-container .frame:not(.arrow-right) {
-  background-color: var(--darkbackground) !important;
-  color: var(--lightbackground);
 }
 
 .light .frames-container .frame.arrow-right {
