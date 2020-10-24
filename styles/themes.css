@@ -195,12 +195,12 @@ body.light {
   background-size: cover;
 }
 
-.frames-container .frame:not(.arrow-right) {
+.frames-container .frame:not(.connector) {
   background-color: var(--lightbackground) !important;
   color: var(--darkbackground);
 }
 
-.light .frames-container .frame:not(.arrow-right) {
+.light .frames-container .frame:not(.connector) {
   background-color: var(--darkbackground) !important;
   color: var(--lightbackground);
 }
@@ -224,11 +224,11 @@ body.light {
 }
 
 .frames-container .frame.explained.cta{
-  animation: light-explain-cta 2s linear 10s infinite normal;
+  animation: light-explain-cta 2s linear 5s infinite normal;
 }
 
 .light .frames-container .frame.explained.cta{
-  animation: dark-explain-cta 2s linear 10s infinite normal;
+  animation: dark-explain-cta 2s linear 5s infinite normal;
 }
 
 .frames-container .frame.explained:hover {

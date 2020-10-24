@@ -17,10 +17,18 @@
   border-radius: 1em;
 }
 
-.frames-container .frame.arrow-right {
+.frames-container .frame.connector {
   width: 5%;
   height: 100%;
+}
+
+.frames-container .frame.connector.go-right {
   background: url(../images/arrow-right.png) no-repeat center center;
+  background-size: 90%;
+}
+
+.frames-container .frame.connector.choice {
+  background: url(../images/choice.png) no-repeat center center;
   background-size: 90%;
 }
 
@@ -41,5 +49,20 @@
 
 .frames-container .frame.browser {
   background: url(../images/browser.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.wordpress {
+  background: url(../images/wordpress.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.wix {
+  background: url(../images/wix.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.bespoken {
+  background: url(../images/bespoken.png) no-repeat center center;
   background-size: 50%;
 }
