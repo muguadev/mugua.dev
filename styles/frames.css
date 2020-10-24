@@ -66,3 +66,18 @@
   background: url(../images/bespoken.png) no-repeat center center;
   background-size: 50%;
 }
+
+.frames-container .frame.frontend {
+  background: url(../images/browser.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.backend {
+  background: url(../images/backend.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.fullstack {
+  background: url(../images/fullstack.png) no-repeat center center;
+  background-size: 50%;
+}
