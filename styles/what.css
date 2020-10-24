@@ -55,3 +55,12 @@
   font-size: 1.6em;
   margin-bottom: 3em;
 }
+
+.explanation-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.explanation {
+  transition: opacity 1s;
+}

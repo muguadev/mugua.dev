@@ -1,7 +1,3 @@
-function hoverText(sector) {
-  sector.addEventListener
-}
-
 function attachHoverTexts() {
   const sectorText = document.querySelector(".sector-text");
   for (s of document.querySelectorAll(".sector")) {
@@ -10,6 +6,15 @@ function attachHoverTexts() {
     });
     s.addEventListener('mouseleave', () => {
       sectorText.textContent = ""
+    });
+  }
+
+  for (e of document.querySelectorAll("#site .frame.explained")) {
+    e.addEventListener('mouseenter', (ev) => {
+      document.querySelector(`.explanation.${ev.target.getAttribute("data-text")}`).classList.remove("hidden");
+    });
+    e.addEventListener('mouseleave', (ev) => {
+      document.querySelector(`.explanation.${ev.target.getAttribute("data-text")}`).classList.add("hidden");
     });
   }
 }

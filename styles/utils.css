@@ -17,3 +17,9 @@
             user-select: auto; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  order: 1000;
+}
