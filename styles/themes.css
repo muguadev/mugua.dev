@@ -200,6 +200,18 @@ body.light {
   color: var(--darkbackground);
 }
 
+.frames-container .frame:not(.arrow-right):hover {
+  cursor: url(../images/more-black.png), auto;
+  border-color: var(--lighttext);
+  box-shadow: 0 0 3em var(--lighttext);
+}
+
+.light .frames-container .frame:not(.arrow-right):hover {
+  cursor: url(../images/more-white.png), auto;
+  border-color: var(--darktext);
+  box-shadow: 0 0 3em var(--darktext);
+}
+
 .light .frames-container .frame:not(.arrow-right) {
   background-color: var(--darkbackground) !important;
   color: var(--lightbackground);
