@@ -32,6 +32,11 @@
   background-size: 90%;
 }
 
+.frames-container .frame.connector.plus {
+  background: url(../images/plus.png) no-repeat center center;
+  background-size: 90%;
+}
+
 .frames-container .frame.idea {
   background: url(../images/idea.png) no-repeat center center;
   background-size: 50%;
@@ -79,5 +84,25 @@
 
 .frames-container .frame.fullstack {
   background: url(../images/fullstack.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.database {
+  background: url(../images/datamodel.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.server {
+  background: url(../images/server.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.client {
+  background: url(../images/browser.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.frames-container .frame.security {
+  background: url(../images/security.png) no-repeat center center;
   background-size: 50%;
 }
