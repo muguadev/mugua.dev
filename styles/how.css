@@ -1,0 +1,59 @@
+#how .content {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#how .content > div {
+  font-size: 1.6em;
+  padding-left: 4em;
+}
+
+#how .content .task {
+  margin-left: 4em;
+}
+
+@keyframes clear {
+    0%  { filter: blur(6px); }
+   50%  { filter: blur(3px); }
+  100%  { filter: blur(0); }
+}
+
+#how .animated {
+  filter: blur(6px);
+}
+
+.blurred {
+  animation: clear 1s linear 0s 1 normal forwards;
+}
+
+#how .content .rfi {
+  background: url(../images/question.png) no-repeat top left 1em;
+  background-size: 2em;
+}
+
+#how .content .task.budget {
+  background: url(../images/budget.png) no-repeat top left 1em;
+  background-size: 2em;
+}
+
+#how .content .task.iterate {
+  background: url(../images/agile.png) no-repeat top left 1em;
+  background-size: 2em;
+}
+
+#how .content .communicate {
+  background: url(../images/dialog.png) no-repeat top left 1em;
+  background-size: 2em;
+}
+
+#how .content .warranty {
+  background: url(../images/warranty.png) no-repeat top left 1em;
+  background-size: 2em;
+}
+
+#how .content .classes {
+  background: url(../images/classes.png) no-repeat top left 1em;
+  background-size: 2em;
+}

@@ -6,6 +6,7 @@
 @import url(styles/frames.css);
 @import url(styles/modal.css);
 @import url(styles/what.css);
+@import url(styles/how.css);
 
 * {
   margin: 0;

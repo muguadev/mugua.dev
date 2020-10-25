@@ -3,6 +3,11 @@ const allOptions = document.querySelectorAll(".menu .option");
 function show(pageId) {
   console.log(`Option ${pageId} has been clicked`);
   document.querySelector(`#${pageId}`).classList.remove("hidden");
+  switch (pageId) {
+    case 'how':
+      animateTasks();
+      break;
+  }
 }
 
 function clicked(ev) {
