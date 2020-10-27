@@ -7,6 +7,7 @@
 @import url(styles/modal.css);
 @import url(styles/what.css);
 @import url(styles/how.css);
+@import url(styles/tools.css);
 
 * {
   margin: 0;
@@ -23,27 +24,12 @@ body {
   width: 98%;
   margin: auto;
   overflow: hidden;
-
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .switch {
   cursor: pointer;
   height: 90%;
   width: 90%;
-  background: url(images/sun.png) no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.light .switch {
-  background: url(images/moon.png) no-repeat center center;
-  background-size: 100% 100%;
 }
 
 .font {

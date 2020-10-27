@@ -17,6 +17,21 @@ body.light {
   color: var(--darktext);
 }
 
+.switch {
+  background: url(../images/sun.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.light .switch {
+  background: url(../images/moon.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.audio.off {
+  background: url(../images/mute-light.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
 .highlight, .hover-highlight:hover {
   filter: var(--bright);
 }

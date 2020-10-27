@@ -1,0 +1,94 @@
+#tools .content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+    "web blog"
+    "app training";
+}
+
+#tools .content div[data-area] {
+  grid-area: attr(data-area);
+  height: 90%;
+  width: 90%;
+  border-radius: 1em;
+}
+
+#tools .content .cover {
+  place-self: center;
+  border-bottom: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tools .content .cover > span {
+  transition: opacity 1s;
+  padding-bottom: 0.5em;
+}
+
+#tools .content .cover .tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 90%;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#tools .content .cover .tools .tool{
+  font-size: 1.2em;
+  padding-left: 3em;
+  width: 80%;
+}
+
+#tools .content .cover[data-area=web] {
+  background: url(../images/browser.png) no-repeat center center;
+  background-size: 50%;
+}
+
+#tools .content .cover[data-area=blog] {
+  background: url(../images/blog.png) no-repeat center center;
+  background-size: 50%;
+}
+
+#tools .content .cover[data-area=app] {
+  background: url(../images/app.png) no-repeat center center;
+  background-size: 50%;
+}
+
+#tools .content .cover[data-area=training] {
+  background: url(../images/training.png) no-repeat center center;
+  background-size: 50%;
+}
+
+#tools .content .cover:hover {
+  box-shadow: 0.5em 0.5em 1em currentColor;
+  background: transparent;
+}
+
+#tools .content .cover:hover > span {
+  opacity: 0;
+}
+
+#tools .content .cover:hover .tools{
+  opacity: 1;
+}
+
+#tools .content .cover .tools .tool.html{
+  background: url(../images/html5.png) no-repeat center left;
+  background-size: contain;
+}
+
+#tools .content .cover .tools .tool.css{
+  background: url(../images/css3.png) no-repeat center left;
+  background-size: contain;
+}
+
+#tools .content .cover .tools .tool.js{
+  background: url(../images/js.png) no-repeat center left;
+  background-size: contain;
+}
