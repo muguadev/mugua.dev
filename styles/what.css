@@ -14,7 +14,6 @@
 }
 
 #what .content .outer .sector {
-  cursor: pointer;
   position: absolute;
   transform-origin: 100% 100%;
   width: 60vmin;

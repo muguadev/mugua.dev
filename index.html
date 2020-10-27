@@ -14,20 +14,20 @@
     </div>
     <div class="biglogo"></div>
     <div class="menu">
-      <div class="option hover-highlight" data-option="what" data-longtext="&iquest;Qu&eacute; servicios te ofrezco?"><span>&iquest;Qu&eacute;?</span></div>
-      <div class="option hover-highlight" data-option="how" data-longtext="&iquest;C&oacute;mo trabajo?"><span>&iquest;C&oacute;mo?</span></div>
-      <div class="option hover-highlight" data-option="tools" data-longtext="&iquest;Con qu&eacute; herramientas trabajo?"><span>&iquest;Con qu&eacute;?</span></div>
-      <div class="option hover-highlight" data-option="who" data-longtext="&iquest;Qui&eacute;n es m&ugrave; gu&amacr;?"><span>&iquest;Qui&eacute;n?</span></div>
+      <div class="option clickable" data-option="what" data-longtext=" servicios te ofrezco?"><span>&iquest;Qu&eacute;</span></div>
+      <div class="option clickable" data-option="how" data-longtext=" trabajo?"><span>&iquest;C&oacute;mo</span></div>
+      <div class="option clickable" data-option="tools" data-longtext=" herramientas trabajo?"><span>&iquest;Con qu&eacute;</span></div>
+      <div class="option clickable" data-option="who" data-longtext=" es m&ugrave; gu&amacr;?"><span>&iquest;Qui&eacute;n</span></div>
     </div>
     <div class="section hidden" id="what">
       <h2>&iquest;Qu&eacute; servicios te ofrezco?</h2>
       <div class="content">
         <div class="outer">
           <div class="inner"></div>
-          <a href="#site" class="sector hover-highlight top-left" data-title="Dise&ntilde;o y desarrollo de p&aacute;ginas web est&aacute;ticas"></a>
-          <a href="#blog" class="sector hover-highlight top-right" data-title="Dise&ntilde;o y desarrollo de p&aacute;ginas web din&aacute;micas"></a>
-          <a href="#app" class="sector hover-highlight bottom-left" data-title="Dise&ntilde;o y desarrollo de aplicaciones web"></a>
-          <a href="#learn" class="sector hover-highlight bottom-right" data-title="Formaci&oacute;n en metodolog&iacute;as, principios y lenguajes de programaci&oacute;n"></a>
+          <a href="#site" class="sector clickable top-left" data-title="Dise&ntilde;o y desarrollo de p&aacute;ginas web est&aacute;ticas"></a>
+          <a href="#blog" class="sector clickable top-right" data-title="Dise&ntilde;o y desarrollo de p&aacute;ginas web din&aacute;micas"></a>
+          <a href="#app" class="sector clickable bottom-left" data-title="Dise&ntilde;o y desarrollo de aplicaciones web"></a>
+          <a href="#learn" class="sector clickable bottom-right" data-title="Formaci&oacute;n en metodolog&iacute;as, principios y lenguajes de programaci&oacute;n"></a>
         </div>
         <div class="sector-text"></div>
       </div>
@@ -46,15 +46,15 @@
             Puedo acompa&ntilde;arte&hellip;
           </p>
           <div class="frames-container">
-            <div class="frame idea explained" data-text="idea">
+            <div class="frame idea explained reverse" data-text="idea">
               &hellip; desde la idea original,&hellip;
             </div>
             <div class="frame connector go-right"></div>
-            <div class="frame design explained" data-text="design">
+            <div class="frame design explained reverse" data-text="design">
               &hellip; o a partir de tu dise&ntilde;o &hellip;
             </div>
             <div class="frame connector go-right"></div>
-            <div class="frame coding explained" data-text="coding">
+            <div class="frame coding explained reverse" data-text="coding">
               &hellip; o desde tu web actual&hellip; 
             </div>
             <div class="frame connector go-right"></div>
@@ -98,15 +98,15 @@
             Te ofrezco estas alternativas:
           </p>
           <div class="frames-container">
-            <div class="frame wordpress explained" data-text="wordpress">
+            <div class="frame wordpress explained reverse" data-text="wordpress">
               Una p&aacute;gina en WordPress,&hellip;
             </div>
             <div class="frame connector choice"></div>
-            <div class="frame wix explained" data-text="wix">
+            <div class="frame wix explained reverse" data-text="wix">
               &hellip; o en Wix&hellip;
             </div>
             <div class="frame connector choice"></div>
-            <div class="frame bespoken explained" data-text="bespoken">
+            <div class="frame bespoken explained reverse" data-text="bespoken">
               &hellip; o crear una desde cero. 
             </div>
           </div>
@@ -172,15 +172,15 @@
             Si lo que quieres es programar, por necesidad o por curiosidad, puedo ense&ntilde;arte c&oacute;mo&hellip;
           </p>
           <div class="frames-container">
-            <div class="frame frontend explained" data-text="frontend">
+            <div class="frame frontend explained reverse" data-text="frontend">
               &hellip; crear una web como esta, &hellip;
             </div>
             <div class="frame connector choice"></div>
-            <div class="frame backend explained" data-text="backend">
+            <div class="frame backend explained reverse" data-text="backend">
               &hellip; un proveedor de servicios web, &hellip; 
             </div>
             <div class="frame connector choice"></div>
-            <div class="frame fullstack explained" data-text="fullstack">
+            <div class="frame fullstack explained reverse" data-text="fullstack">
               &hellip; o una aplicaci&oacute;n web completa.
             </div>
           </div>
@@ -210,7 +210,7 @@
           </div>
         </div>
       </div>
-      <div class="back hover-highlight" onclick="hidePage(this)"></div>
+      <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
     <div class="section hidden" id="how">
       <h2>&iquest;C&oacute;mo trabajo?</h2>
@@ -225,33 +225,40 @@
         <div class="animated task budget">Acordaremos un <b>calendario</b> y un <b>precio mensual,</b> en funci&oacute;n del contenido y el nivel del curso.</div>
         <div class="animated task classes">Las clases ser&aacute;n por videoconferencia y, excepto en algunos casos puntuales, directamente en un <b>entorno de desarrollo colaborativo.</b></div>
       </div>
-      <div class="back hover-highlight" onclick="hidePage(this)"></div>
+      <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
     <div class="section hidden" id="tools">
       <h2>&iquest;Con qu&eacute; herramientas trabajo?</h2>
       <div class="content">
-        <div class="cover" data-area="web">
+        <div class="cover zoomable explained" data-area="web">
           <div class="tools">
-            <div class="tool html">HTML 5 para crear la estructura y para dotar a la p&aacute;gina de contenido</div>
+            <div class="tool html">HTML 5 para crear la estructura y dotar a la p&aacute;gina de contenido</div>
             <div class="tool css">CSS 3 para los estilos y algunos efectos y animaciones</div>
             <div class="tool js">JavaScript &laquo;sin aditivos&raquo; para animaciones y navegaci&oacute;n</div>
           </div>
-          <span>P&aacute;ginas web est&aacute;ticas</span>
+          <span>Desarrollo p&aacute;ginas web est&aacute;ticas con&hellip;</span>
         </div>
-        <div class="cover" data-area="blog"></div>
-        <div class="cover" data-area="app"></div>
-        <div class="cover" data-area="training"></div>
+        <div class="cover zoomable explained" data-area="blog">
+          <div class="tools">
+            <div class="tool wordpress">WordPress, porque es una plataforma muy extendida y de uso sencillo</div>
+            <div class="tool wix">Wix, porque permite mayor flexibilidad en el aspecto y la funcionalidad de tu p&aacute;gina</div>
+            <div class="tool cosmic">Cosmic porque da libertad casi total sobre tu p&aacute;gina (&#x1F9EA; &iexcl;ojo, a&uacute;n en fase experimental! &#x1F9EA;)</div>
+          </div>
+          <span>Desarrollo p&aacute;ginas web din&aacute;micas con&hellip;</span>
+        </div>
+        <div class="cover zoomable explained" data-area="app"></div>
+        <div class="cover zoomable explained" data-area="training"></div>
       </div>
-      <div class="back hover-highlight" onclick="hidePage(this)"></div>
+      <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
     <div class="section hidden" id="who">
       <h2>&iquest;Qui&eacute;n es m&ugrave; gu&amacr;?</h2>
       <div class="content"></div>
-      <div class="back hover-highlight" onclick="hidePage(this)"></div>
+      <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
-    <div class="switch hover-highlight off" onclick="themeSwitch(this)"></div>
-    <div class="font hover-highlight" onclick="dyslexicSwitch()">a</div>
-    <div class="audio off hover-highlight" onclick="audioSwitch()"></div>
+    <div class="switch clickable zoomable off" onclick="themeSwitch(this)"></div>
+    <div class="font clickable zoomable" onclick="dyslexicSwitch()">a</div>
+    <div class="audio clickable zoomable off" onclick="audioSwitch()"></div>
     <div class="signature">
       <span><b>m&ugrave; gu&amacr;</b> perpetr&oacute; esta web</span>
     </div>

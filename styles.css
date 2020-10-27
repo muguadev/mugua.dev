@@ -14,6 +14,18 @@
   padding: 0;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
+.zoomable{
+  transition: transform 1s;
+}
+
+.zoomable:hover {
+  transform: scale(1.2);
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -27,13 +39,11 @@ body {
 }
 
 .switch {
-  cursor: pointer;
   height: 90%;
   width: 90%;
 }
 
 .font {
-  cursor: pointer;
   font-size: 2em;
 }
 
@@ -85,7 +95,6 @@ body {
 
 .option:hover{
   font-weight: bold;
-  cursor: pointer;
 }
 
 .option.hidden {
@@ -131,8 +140,4 @@ body {
   visibility: hidden;
   opacity: 0;
   z-index: -1;
-}
-
-.section .back:hover {
-  cursor: pointer;
 }

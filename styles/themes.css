@@ -17,6 +17,14 @@ body.light {
   color: var(--darktext);
 }
 
+.explained, .light .explained.reverse {
+  cursor: url(../images/more-white.png), auto;
+}
+
+.explained.reverse, .light .explained {
+  cursor: url(../images/more-black.png), auto;
+}
+
 .switch {
   background: url(../images/sun.png) no-repeat center center;
   background-size: 100% 100%;
@@ -32,11 +40,16 @@ body.light {
   background-size: 100% 100%;
 }
 
-.highlight, .hover-highlight:hover {
+.light .audio.off {
+  background: url(../images/mute-dark.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.highlight, .clickable:hover {
   filter: var(--bright);
 }
 
-.light .highlight, .light .hover-highlight:hover {
+.light .highlight, .light .clickable:hover {
   filter: var(--dim);
 }
 
@@ -247,13 +260,11 @@ body.light {
 }
 
 .frames-container .frame.explained:hover {
-  cursor: url(../images/more-black.png), auto;
   border-color: var(--lighttext);
   box-shadow: 0 0 3em var(--lighttext);
 }
 
 .light .frames-container .frame.explained:hover {
-  cursor: url(../images/more-white.png), auto;
   border-color: var(--darktext);
   box-shadow: 0 0 3em var(--darktext);
 }
@@ -270,4 +281,14 @@ body.light {
 .light .frames-container .frame.wix {
   background: url(../images/wix-white.png) no-repeat center center;
   background-size: 50%;
+}
+
+#tools .content .cover .tools .tool.wix{
+  background: url(../images/wix-white.png) no-repeat top left;
+  background-size: 2em;
+}
+
+.light #tools .content .cover .tools .tool.wix{
+  background: url(../images/wix-black.png) no-repeat top left;
+  background-size: 2em;
 }

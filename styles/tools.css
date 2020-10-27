@@ -79,16 +79,26 @@
 }
 
 #tools .content .cover .tools .tool.html{
-  background: url(../images/html5.png) no-repeat center left;
+  background: url(../images/html5.png) no-repeat top left;
   background-size: contain;
 }
 
 #tools .content .cover .tools .tool.css{
-  background: url(../images/css3.png) no-repeat center left;
+  background: url(../images/css3.png) no-repeat top left;
   background-size: contain;
 }
 
 #tools .content .cover .tools .tool.js{
-  background: url(../images/js.png) no-repeat center left;
+  background: url(../images/js.png) no-repeat top left;
   background-size: contain;
+}
+
+#tools .content .cover .tools .tool.wordpress{
+  background: url(../images/wordpress.png) no-repeat top left;
+  background-size: contain;
+}
+
+#tools .content .cover .tools .tool.cosmic{
+  background: url(../images/cosmicjs.png) no-repeat top left;
+  background-size: 2em;
 }
