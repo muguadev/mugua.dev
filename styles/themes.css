@@ -261,3 +261,13 @@ body.light {
 .light .frames-container .frame.arrow-right {
   filter: var(--dim);
 }
+
+.frames-container .frame.wix {
+  background: url(../images/wix-black.png) no-repeat center center;
+  background-size: 50%;
+}
+
+.light .frames-container .frame.wix {
+  background: url(../images/wix-white.png) no-repeat center center;
+  background-size: 50%;
+}
