@@ -8,6 +8,7 @@ function show(pageId) {
       animateTasks();
       break;
   }
+  document.querySelector(".signature").classList.add("hidden")
 }
 
 function clicked(ev) {
@@ -31,4 +32,5 @@ function hidePage(target) {
   for (o of allOptions) {
     o.classList.remove("hidden");
   };
+  document.querySelector(".signature").classList.remove("hidden");
 }

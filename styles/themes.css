@@ -59,12 +59,12 @@ body.light {
 
 .signature {
   background: url(../images/mugua-light.png) no-repeat center left;
-  background-size: 10%;
+  background-size: 1.5em;
 }
 
 .light .signature{
   background: url(../images/mugua-dark.png) no-repeat center left;
-  background-size: 10%;
+  background-size: 1.5em;
 }
 
 .biglogo {
@@ -290,5 +290,55 @@ body.light {
 
 .light #tools .content .cover .tools .tool.wix{
   background: url(../images/wix-black.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.apollojs{
+  background: url(../images/apollojs-light.png) no-repeat top left;
+  background-size: 2em;
+}
+
+.light #tools .content .cover .tools .tool.apollojs{
+  background: url(../images/apollojs-dark.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.replit{
+  background: url(../images/replit-light.png) no-repeat top left;
+  background-size: 2em;
+}
+
+.light #tools .content .cover .tools .tool.replit{
+  background: url(../images/replit-dark.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.github{
+  background: url(../images/github-light.png) no-repeat top left;
+  background-size: 2em;
+}
+
+.light #tools .content .cover .tools .tool.github{
+  background: url(../images/github-dark.png) no-repeat top left;
+  background-size: 2em;
+}
+
+.q {
+  background: url(../images/q-light.png) no-repeat center center;
+  background-size: contain;
+}
+
+.light .q {
+  background: url(../images/q-dark.png) no-repeat center center;
+  background-size: contain;
+}
+
+.content > p.hugesig {
+  background: url(../images/mugua-light.png) no-repeat center left;
+  background-size: 2em;
+}
+
+.light .content > p.hugesig {
+  background: url(../images/mugua-dark.png) no-repeat center left;
   background-size: 2em;
 }

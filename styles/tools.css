@@ -1,3 +1,22 @@
+.section > span {
+  grid-area: title;
+  width: 100%;
+  place-self: center left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section > span > h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.section > span > .q {
+  height: 1.8em;
+  width: 1.8em;
+  align-self: center;
+}
+
 #tools .content {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -30,6 +49,7 @@
 }
 
 #tools .content .cover .tools {
+  place-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -37,6 +57,13 @@
   width: 90%;
   transition: opacity 1s;
   opacity: 0;
+}
+
+#tools .content .cover .tools .q{
+  grid-area: title;
+  height: 1.8em;
+  width: 1.8em;
+  place-self: center right 0.5em;
 }
 
 #tools .content .cover .tools .tool{
@@ -80,25 +107,60 @@
 
 #tools .content .cover .tools .tool.html{
   background: url(../images/html5.png) no-repeat top left;
-  background-size: contain;
+  background-size: 2em;
 }
 
 #tools .content .cover .tools .tool.css{
   background: url(../images/css3.png) no-repeat top left;
-  background-size: contain;
+  background-size: 2em;
 }
 
 #tools .content .cover .tools .tool.js{
   background: url(../images/js.png) no-repeat top left;
-  background-size: contain;
+  background-size: 2em;
 }
 
 #tools .content .cover .tools .tool.wordpress{
   background: url(../images/wordpress.png) no-repeat top left;
-  background-size: contain;
+  background-size: 2em;
 }
 
 #tools .content .cover .tools .tool.cosmic{
   background: url(../images/cosmicjs.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.rails{
+  background: url(../images/ror.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.clojure{
+  background: url(../images/clojure.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.postgresql{
+  background: url(../images/postgresql.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.graphql{
+  background: url(../images/graphql.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.reactjs{
+  background: url(../images/reactjs.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.vslshare{
+  background: url(../images/VSCodeLiveShare.png) no-repeat top left;
+  background-size: 2em;
+}
+
+#tools .content .cover .tools .tool.slack{
+  background: url(../images/slack.png) no-repeat top left;
   background-size: 2em;
 }

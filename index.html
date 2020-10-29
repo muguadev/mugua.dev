@@ -14,12 +14,12 @@
     </div>
     <div class="biglogo"></div>
     <div class="menu">
-      <div class="option clickable" data-option="what" data-longtext=" servicios te ofrezco?">&iquest;Qu&eacute;</div>
-      <div class="option clickable" data-option="how" data-longtext=" trabajo?">&iquest;C&oacute;mo</div>
-      <div class="option clickable" data-option="tools" data-longtext=" herramientas trabajo?">&iquest;Con qu&eacute;</div>
-      <div class="option clickable" data-option="who" data-longtext=" es m&ugrave; gu&amacr;?">&iquest;Qui&eacute;n</div>
+      <div class="option clickable hideable" data-option="what" data-longtext=" servicios te ofrezco?">&iquest;Qu&eacute;</div>
+      <div class="option clickable hideable" data-option="how" data-longtext=" trabajo?">&iquest;C&oacute;mo</div>
+      <div class="option clickable hideable" data-option="tools" data-longtext=" herramientas trabajo?">&iquest;Con qu&eacute;</div>
+      <div class="option clickable hideable" data-option="who" data-longtext=" es m&ugrave; gu&amacr;?">&iquest;Qui&eacute;n</div>
     </div>
-    <div class="section hidden" id="what">
+    <div class="section hideable hidden" id="what">
       <h2>&iquest;Qu&eacute; servicios te ofrezco?</h2>
       <div class="content">
         <div class="outer">
@@ -212,7 +212,7 @@
       </div>
       <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
-    <div class="section hidden" id="how">
+    <div class="section hideable hidden" id="how">
       <h2>&iquest;C&oacute;mo trabajo?</h2>
       <div class="content">
         <div class="rfi">Tendremos una conversaci&oacute;n de la que sacar&eacute; una <b>idea general, pero completa,</b> de qu&eacute; es lo que necesitas que haga.</div>
@@ -227,8 +227,11 @@
       </div>
       <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
-    <div class="section hidden" id="tools">
-      <h2>&iquest;Con qu&eacute; herramientas trabajo?</h2>
+    <div class="section hideable hidden" id="tools">
+      <span>
+        <h2>&iquest;Con qu&eacute; herramientas trabajo?</h2>
+        <a href="#wtf" class="q clickable zoomable"></a>
+      </span>
       <div class="content">
         <div class="cover zoomable explained" data-area="web">
           <div class="tools">
@@ -242,24 +245,89 @@
           <div class="tools">
             <div class="tool wordpress">WordPress, porque es una plataforma muy extendida y de uso sencillo</div>
             <div class="tool wix">Wix, porque permite mayor flexibilidad en el aspecto y la funcionalidad de tu p&aacute;gina</div>
-            <div class="tool cosmic">Cosmic porque da libertad casi total sobre tu p&aacute;gina (&#x1F9EA; &iexcl;ojo, a&uacute;n en fase experimental! &#x1F9EA;)</div>
+            <div class="tool cosmic">Cosmic, porque da libertad casi total sobre tu p&aacute;gina (&#x1F9EA; &iexcl;ojo, a&uacute;n en fase experimental! &#x1F9EA;)</div>
           </div>
           <span>Desarrollo p&aacute;ginas web din&aacute;micas con&hellip;</span>
         </div>
-        <div class="cover zoomable explained" data-area="app"></div>
-        <div class="cover zoomable explained" data-area="training"></div>
+        <div class="cover zoomable explained" data-area="app">
+          <div class="tools">
+            <div class="tool rails">Ruby on Rails para aplicaciones &laquo;monol&iacute;ticas&raquo;</div>
+            <div class="tool clojure">Clojure para la parte servidora en aplicaciones de varias capas</div>
+            <div class="tool postgresql">PostgreSQL para almacenar informaci&oacute;n estructurada</div>
+            <div class="tool graphql">GraphQL como lenguaje de comunicaci&oacute;n entre cliente y servidor</div>
+            <div class="tool reactjs">ReactJS para la parte cliente en aplicaciones de varias capas</div>
+            <div class="tool apollojs">Apollo Client para que la parte cliente interact&uacute;e con las API</div>
+          </div>
+          <span>Desarrollo aplicaciones web con&hellip;</span>
+        </div>
+        <div class="cover zoomable explained" data-area="training">
+          <div class="tools">
+            <div class="tool replit">Repl.it, para hacer peque&ntilde;os ejercicios en un entorno colaborativo&hellip;</div>
+            <div class="tool vslshare">&hellip; o Visual Studio Live Share, si se trata de proyectos m&aacute;s grandes</div>
+            <div class="tool github">GitHub para almacenar el c&oacute;digo que crearemos</div>
+            <div class="tool slack">Slack para que t&uacute; y yo podamos comunicarnos</div>
+          </div>
+          <span>Ense&ntilde;o a programar con&hellip;</span>
+        </div>
+      </div>
+      <div class="modal" id="wtf">
+        <div class="modal-logo q"></div>
+        <div class="modal-content">
+          <a href="#" class="close"></a>
+          <h2 class="modal-title">¿Por qu&eacute; me cuentas esto?</h2>
+          <p>
+            Es muy probable que todo lo que te cuento en esta secci&oacute;n te suene marciano, excepto si tienes inter&eacute;s en
+            aprender a programar. No pasa nada. No es imprescincible que conozcas ni que te suene ninguna de estas herramientas para
+            que podamos trabajar juntos.
+          </p>
+          <p>
+            A&uacute;n as&iacute;, he querido contarte aqu&iacute; con qu&eacute; me siento m&aacute;s c&oacute;modo a la hora de
+            trabajar porque, si tu p&aacute;gina o tu aplicaci&oacute;n no est&aacute; construida con alguna de ellas o tu <i>hosting</i>
+            no soporta alguna de estas tecnolog&iacute;as, es probable que no pueda ayudarte o que, si puedo ofrecerte una soluci&oacute;n,
+            &eacute;sta no sea la m&aacute;s eficiente y que tarde m&aacute;s en construirla que si lo hiciera con mis herramientas preferidas.
+          </p>
+          <p>
+            Si nada de esto supone un problema&hellip; encantado de ponerme manos a la obra.
+          </p>
+        </div>
       </div>
       <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
-    <div class="section hidden" id="who">
+    <div class="section hideable hidden" id="who">
       <h2>&iquest;Qui&eacute;n es m&ugrave; gu&amacr;?</h2>
-      <div class="content"></div>
+      <div class="content">
+        <p class="definition">
+          <b>m&ugrave; gu&amacr; (&#26408;&#29916;)</b>
+          1. f. Fruto del papayo, generalmente de forma oblonga, hueco y que encierra las
+          semillas en su concavidad. La parte mollar, semejante a la del mel&oacute;n, es amarilla y dulce, y de &eacute;l se hace,
+          cuando verde, una confitura muy estimada.
+        </p>
+        <p>
+          <b>m&ugrave; gu&amacr;,</b> para lo que nos ocupa en este momento, es una persona que ha dedicado <b>casi el 70%</b> de su
+          vida a programar, dise&ntilde;ar soluciones inform&aacute;ticas y formar y gestionar equipos que desarrollan aplicaciones.
+          Lo cual, teniendo en cuenta su edad, son <b>unas cuantas d&eacute;cadas.</b>
+        </p>
+        <p>
+          Se define a s&iacute; como <b><i>&laquo;artesano web&raquo;</i></b> porque, en su experiencia, el desarrollo de <i>software</i>
+          es m&aacute;s <b>un proceso creativo y artesanal</b> que cient&iacute;fico e ingenieril.</p>
+        <p>
+          Tambi&eacute;n se suele autoaplicar el
+          apelativo de <b><i>&laquo;papaya&raquo;</i></b> (y de ah&iacute; su <i>nom de guerre</i>), entendido como lo hace
+          <a href="https://twitter.com/Lulusintilde" target="_blank">@Lulusintilde</a>, porque defiende que, quien considera que lo sabe
+          todo, nunca aprende nada, y <b>&eacute;l tiene much&iacute;simas cosas que aprender.</b>
+        </p>
+        <p>
+          Por &uacute;ltimo&hellip;
+        </p>
+        <p class="hugesig">
+          <b>m&ugrave; gu&amacr;</b> perpetr&oacute; esta web
+        </p>
+      </div>
       <div class="back clickable zoomable" onclick="hidePage(this)"></div>
     </div>
     <div class="switch clickable zoomable off" onclick="themeSwitch(this)"></div>
     <div class="font clickable zoomable" onclick="dyslexicSwitch()">a</div>
-    <div class="audio clickable zoomable off" onclick="audioSwitch()"></div>
-    <div class="signature">
+    <div class="signature hideable">
       <span><b>m&ugrave; gu&amacr;</b> perpetr&oacute; esta web</span>
     </div>
     <script src="scripts/modal.js"></script>
