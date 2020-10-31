@@ -37,11 +37,37 @@ html {
 }
 
 body {
+  font-size: 16px;
   height: 98%;
   width: 98%;
   margin: 1% auto;
   overflow: hidden;
 }
+
+@media screen and (max-device-width: 1600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-device-width: 1280px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* @media screen and (hover: none) and (orientation: portrait) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+@media screen and (hover: none) and (orientation: landscape) {
+  body {
+    font-size: 10px
+  }
+}
+
 
 .switch {
   height: 90%;
@@ -76,8 +102,8 @@ body {
 }
 
 .biglogo {
-  height: 35em;
-  width: 35em;
+  height: 100%;
+  width: 100%;
   animation: biglogo 1.5s linear 0.5s 1 normal forwards;
 }
 
