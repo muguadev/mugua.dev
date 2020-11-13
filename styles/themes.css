@@ -335,10 +335,10 @@ body.light {
 
 .content > p.hugesig {
   background: url(../images/mugua-light.png) no-repeat center left;
-  background-size: 2em;
+  background-size: 1.5em;
 }
 
 .light .content > p.hugesig {
   background: url(../images/mugua-dark.png) no-repeat center left;
-  background-size: 2em;
+  background-size: 1.5em;
 }
