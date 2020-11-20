@@ -7,6 +7,15 @@
   --dim: brightness(80%);
 }
 
+.header .email > a::before {
+  content: url(../images/email-light.png);
+  margin: 5px;
+}
+
+.light .header .email > a::before {
+  content: url(../images/email-dark.png);
+}
+
 body {
   background-color:var(--darkbackground);
   color: var(--lighttext);

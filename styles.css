@@ -101,6 +101,11 @@ body {
   font-weight: bold;
 }
 
+.header .email > a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .biglogo {
   height: 100%;
   width: 100%;
