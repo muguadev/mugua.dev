@@ -30,3 +30,7 @@ function attachHoverTexts() {
     });
   }
 }
+
+function togglePull () {
+  document.querySelector("#what .pull-up").classList.toggle("clicked");
+}

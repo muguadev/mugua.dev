@@ -99,12 +99,12 @@ body.light {
   color: currentColor;
 }
 
-.section a[target="_blank"]::after {
+.section a:not(.sample)[target="_blank"]::after {
   margin-left: 0.2em;
   content: url(../images/link-light.png);
 }
 
-.light .section a[target="_blank"]::after{
+.light .section a:not(.sample)[target="_blank"]::after{
   content: url(../images/link-dark.png);
 }
 
@@ -350,4 +350,23 @@ body.light {
 .light .content > p.hugesig {
   background: url(../images/mugua-dark.png) no-repeat center left;
   background-size: 1.5em;
+}
+
+#what .pull-up {
+  background-color: var(--darkbackground);
+}
+
+.light #what .pull-up {
+  background-color: var(--lightbackground);
+}
+
+#what .pull-up .icon {
+  padding-left: 0.2vw;
+  width: 1vw;
+  height: 100%;
+  background: url(../images/pull-light.png) no-repeat center center/contain;
+}
+
+.light #what .pull-up .icon {
+  background-image: url(../images/pull-dark.png);
 }
