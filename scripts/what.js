@@ -31,6 +31,12 @@ function attachHoverTexts() {
   }
 }
 
-function togglePull () {
-  document.querySelector("#what .pull-up").classList.toggle("clicked");
+function closing(target) {
+  const pulled = target.parentElement.parentElement.querySelector(".pull-up.clicked");
+  console.log(pulled);
+  if (!!pulled) togglePull(pulled);
+}
+
+function togglePull(target) {
+  target.classList.toggle("clicked");
 }

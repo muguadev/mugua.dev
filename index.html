@@ -37,7 +37,7 @@
       <div class="modal" id="site">
         <div class="modal-logo site"></div>
         <div class="modal-content">
-          <a href="#" class="close"></a>
+          <a href="#" class="close" onclick="closing(this)"></a>
           <h2 class="modal-title">Dise&ntilde;o y desarrollo de p&aacute;ginas web est&aacute;ticas</h2>
           <p><i>
             &laquo;Quiero una p&aacute;gina web con contenido que va a cambiar muy poco o nada, que tenga un dise&ntilde;o
@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="pull-up">
-          <div class="icon clickable" onclick="togglePull()"></div>
+          <div class="icon clickable" onclick="togglePull(this.parentElement)"></div>
           <div class="frames-container portfolio">
             <a href="samples/booklet/index.html" target="_blank" class="sample frame booklet reverse">
               <i>Booklet</i>
@@ -99,7 +99,7 @@
       <div class="modal" id="blog">
         <div class="modal-logo blog"></div>
         <div class="modal-content">
-          <a href="#" class="close"></a>
+          <a href="#" class="close" onclick="closing(this)"></a>
           <h2 class="modal-title">Dise&ntilde;o y desarrollo de p&aacute;ginas web din&aacute;micas</h2>
           <p><i>
             &laquo;Quiero una p&aacute;gina web a la que pueda a&ntilde;adir contenido cuando lo necesite, sin necesidad de tener que programar
@@ -138,6 +138,14 @@
               Si quieres tener absoluta libertad sobre la apariencia y la funcionalidad de tu web din&aacute;mica, puedo hacer una a tu medida. Llevar&aacute; m&aacute;s
               tiempo, pero tu p&aacute;gina no estar&aacute; tan limitada por una plantilla o una caja de herramientas predise&ntilde;adas.
             </p>
+          </div>
+        </div>
+        <div class="pull-up">
+          <div class="icon clickable" onclick="togglePull(this.parentElement)"></div>
+          <div class="frames-container portfolio">
+            <a href="samples/wpfront/index.html" target="_blank" class="sample frame online-shop reverse">
+              "Frontal" para WordPress
+            </a>
           </div>
         </div>
       </div>
